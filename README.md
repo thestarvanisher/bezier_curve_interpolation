@@ -16,7 +16,7 @@ curve = Bezier(points, curve_pts_num)
 The arguments are as follows:
 |Argument name|Default value|Description|
 |-------------|-------------|-----------|
-|`points`|-|A list of lists of point coordinates or a numpay array of that list. A list of point coordinates looks like `[x, y]`, where `x` is the x-axis coordinate and `y` is the y-axis coordinate of the point. For example, `[[50, 30], [100, 100]]` represents the two points `(50, 30)` and `(100, 100)`|
+|`points`|-|A list of lists of point coordinates or a numpay array of that list. A list of point coordinates looks like `[x, y]`, where `x` is the x-axis coordinate and `y` is the y-axis coordinate of the point. For example, `[[50, 30], [100, 100]]` represents the two points `(50, 30)` and `(100, 100)`. **Important:** the points must be put in the same order as we want the curve to go through the points|
 |`curve_pts_num`|30|The number of points on each of the Bezier curves. The bigger the number the smoother is the curve|
 
 These are the available methods:
@@ -53,8 +53,13 @@ In the code we use a cubic Bezier curve. It has the following parameterization:
 
 where ![equation](https://latex.codecogs.com/svg.latex?0&space;\leq&space;t&space;\leq&space;1). ![equation](https://latex.codecogs.com/svg.latex?P_0) is the first control point, also a starting point, ![equation](https://latex.codecogs.com/svg.latex?P_1,&space;P_2) - the second and third control points and ![equation](https://latex.codecogs.com/svg.latex?P_3) is the fourth control point, also an end point.
 
-![equation](https://latex.codecogs.com/svg.latex?B'(t)&space;=&space;3(1-t)^2(P_1-P_0)&plus;6(1-t)t(P_2-P_1)&plus;3t^2(P_3-P_2)\\&space;B'(t=0)&space;=&space;3(P_1-P_0))
+The smooth transitioning between two consecutive points is guaranteed when the first and second derivatives at the same point in both equations are respectively equal.
 
-![equation](https://latex.codecogs.com/svg.latex?\begin{align*}&space;B'(t=0)&space;&=&space;3(P_1-P_0)&space;\\&space;&=&space;3P_1-3P_0&space;\end{align*})
+We obtain the first and second derivative:
+<!-- $$
+B'(t) = 3(1-t)^2(P_1-P_0)+6(1-t)t(P_2-P_1)+3t^2(P_3-P_2)
+$$ --> 
+
+<div><img src="https://render.githubusercontent.com/render/math?math=B'(t)%20%3D%203(1-t)%5E2(P_1-P_0)%2B6(1-t)t(P_2-P_1)%2B3t%5E2(P_3-P_2)%0D"></div>
 
 ## License
