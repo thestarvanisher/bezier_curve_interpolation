@@ -55,4 +55,6 @@ where ![equation](https://latex.codecogs.com/svg.latex?0&space;\leq&space;t&spac
 
 ![equation](https://latex.codecogs.com/svg.latex?B'(t)&space;=&space;3(1-t)^2(P_1-P_0)&plus;6(1-t)t(P_2-P_1)&plus;3t^2(P_3-P_2)\\&space;B'(t=0)&space;=&space;3(P_1-P_0))
 
+![equation](https://latex.codecogs.com/svg.latex?\begin{align*}&space;B'(t=0)&space;&=&space;3(P_1-P_0)&space;\\&space;&=&space;3P_1-3P_0&space;\end{align*})
+
 ## License
