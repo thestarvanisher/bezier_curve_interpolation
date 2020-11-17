@@ -53,5 +53,6 @@ In the code we use a cubic Bezier curve. It has the following parameterization:
 
 where ![equation](https://latex.codecogs.com/svg.latex?0&space;\leq&space;t&space;\leq&space;1). ![equation](https://latex.codecogs.com/svg.latex?P_0) is the first control point, also a starting point, ![equation](https://latex.codecogs.com/svg.latex?P_1,&space;P_2) - the second and third control points and ![equation](https://latex.codecogs.com/svg.latex?P_3) is the fourth control point, also an end point.
 
+![equation](https://latex.codecogs.com/svg.latex?B'(t)&space;=&space;3(1-t)^2(P_1-P_0)&plus;6(1-t)t(P_2-P_1)&plus;3t^2(P_3-P_2)\\&space;B'(t=0)&space;=&space;3(P_1-P_0))
 
 ## License
