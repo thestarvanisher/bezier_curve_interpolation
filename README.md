@@ -51,7 +51,7 @@ which will return the points as numpy array so that they can be used by another 
 In the code we use a cubic Bezier curve. It has the following parameterization:
 ![equation](https://latex.codecogs.com/svg.latex?B(t)&space;=&space;(1-t)^3P_0&space;&plus;&space;3(1-t)^2tP_1&space;&plus;&space;3(1-t)t^2P_2&space;&plus;&space;t^3P_3)
 
-where ![equation](https://latex.codecogs.com/svg.latex?0&space;\leq&space;t&space;\leq&space;1). ![equation](https://latex.codecogs.com/gif.latex?P_0) is the first control point, also a starting point, ![equation](https://latex.codecogs.com/svg.latex?P_1,&space;P_2) - the second and third control points and ![equation](https://latex.codecogs.com/svg.latex?P_3) is the fourth control point, also an end point.
+where ![equation](https://latex.codecogs.com/svg.latex?0&space;\leq&space;t&space;\leq&space;1). ![equation](https://latex.codecogs.com/svg.latex?P_0) is the first control point, also a starting point, ![equation](https://latex.codecogs.com/svg.latex?P_1,&space;P_2) - the second and third control points and ![equation](https://latex.codecogs.com/svg.latex?P_3) is the fourth control point, also an end point.
 
 
 ## License
