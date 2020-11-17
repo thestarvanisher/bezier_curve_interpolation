@@ -48,5 +48,8 @@ curve.getPoints()
 which will return the points as numpy array so that they can be used by another method.
 
 ## Explanation of how the interpolation works
+In the code we use a cubic Bezier curve. It has the following parameterization:
+![equation](https://latex.codecogs.com/png.latex?B(t)&space;=&space;(1-t)^3P_0&space;&plus;&space;3(1-t)^2tP_1&space;&plus;&space;3(1-t)t^2P_2&space;&plus;&space;t^3P_3)
 
+where ![equation](https://latex.codecogs.com/gif.latex?0&space;\leq&space;t&space;\leq&space;1)
 ## License
