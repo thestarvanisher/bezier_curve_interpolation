@@ -62,4 +62,5 @@ $$ -->
 
 <div><img src="https://render.githubusercontent.com/render/math?math=B'(t)%20%3D%203(1-t)%5E2(P_1-P_0)%2B6(1-t)t(P_2-P_1)%2B3t%5E2(P_3-P_2)%0D"></div>
 
+
 ## License
