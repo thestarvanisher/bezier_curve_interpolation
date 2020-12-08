@@ -178,3 +178,4 @@ $$ -->
 <div><img src="https://render.githubusercontent.com/render/math?math=%5Cbegin%7Bcases%7D%0D%0AG_i(t%20%3D%20%5Cgamma_j)%20%3D%20(1-t)%5E3P_i%20%2B%203t(1-t)%5E2K_i%2B3t%5E2(1-t)S_i%2Bt%5E3P_%7Bi%2B1%7D%2C%5C%3B%20i%20%5Cin%20%5B0%2C%20n-2%5D%2C%5C%3B%20j%20%5Cin%20%5B0%2C%20m%5D%20%5C%5C%0D%0AG_%7Bn-1%7D(t%20%3D%20%5Cgamma_j)%20%3D%20(1-t)%5E3P_%7Bn-1%7D%20%2B%203t(1-t)%5E2K_i%2B3t%5E2(1-t)S_i%2Bt%5E3P_0%2C%5C%3B%20j%20%5Cin%20%5B0%2C%20m%5D%0D%0A%5Cend%7Bcases%7D%0D"></div>
 
 ## License
+Licensed under [MIT](https://github.com/thestarvanisher/bezier_curve_interpolation/blob/main/LICENSE).
