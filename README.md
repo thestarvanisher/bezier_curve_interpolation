@@ -73,7 +73,7 @@ Now we let for point `i`, ![equation](https://latex.codecogs.com/svg.latex?K_i&s
 B_i'(t) = 3(1-t)^2(K_i-P_i)+6(1-t)t(S_i-K_i)+3t^2(P_{i+1}-S_i)
 $$ --> 
 
-<div align="center"><img src="https://render.githubusercontent.com/render/math?math=B_i'(t)%20%3D%203(1-t)%5E2(K_i-P_i)%2B6(1-t)t(S_i-K_i)%2B3t%5E2(P_%7Bi%2B1%7D-S_i)%0D"></div>
+<div><img src="https://render.githubusercontent.com/render/math?math=B_i'(t)%20%3D%203(1-t)%5E2(K_i-P_i)%2B6(1-t)t(S_i-K_i)%2B3t%5E2(P_%7Bi%2B1%7D-S_i)%0D"></div>
 
 In order to ensure the smooth transitioning, the following equations must be satisfied:
 <!-- $$
@@ -108,7 +108,7 @@ S_i = 2P_{i+1} - K_{i+1}
 \end{cases}
 $$ --> 
 
-<div align="center"><img src="https://render.githubusercontent.com/render/math?math=%5Cbegin%7Bcases%7D%0D%0AK_i%20%2B%202K_%7Bi%2B1%7D%20%3D%20P_%7Bi%2B2%7D%20%2B%202P_%7Bi%2B1%7D%20%5C%5C%0D%0AS_i%20%3D%202P_%7Bi%2B1%7D%20-%20K_%7Bi%2B1%7D%0D%0A%5Cend%7Bcases%7D%0D"></div>
+<div><img src="https://render.githubusercontent.com/render/math?math=%5Cbegin%7Bcases%7D%0D%0AK_i%20%2B%202K_%7Bi%2B1%7D%20%3D%20P_%7Bi%2B2%7D%20%2B%202P_%7Bi%2B1%7D%20%5C%5C%0D%0AS_i%20%3D%202P_%7Bi%2B1%7D%20-%20K_%7Bi%2B1%7D%0D%0A%5Cend%7Bcases%7D%0D"></div>
 
 
 We have to be careful with the indeces as they should always be less than `n`. If an index becomes greater or equal to `n`, then the index becomes the remainder of a division with `n`. The first equation could be solved easily using a matrix of coefficients. Let `C` be the coefficient matrix, `b` be the vector of sum of the end points (right side of equation 1) and `x` be the vector of points `K` which are the second control point on each Bezier curve. Then we have to solve `Cx=b` for `x`. Matrix `C` looks like that:
